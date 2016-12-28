@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BabySeater</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_thing">일정추가</string>
+    <string name="event_icon">Event icon</string>
+    <string name="month">월</string>
+    <string name="api_key">AIzaSyDBWwnDDkAEaA9uaWcLGcjHCqnCanmbxkk</string>
+</resources>
