@@ -144,15 +144,15 @@ public class MapAsync extends AsyncTask<String, Void, String>{
                 String sql="insert into school(addr,school_name,lat,lng,schoolbus,max_stu_num,teacher_num,call_num,cctv_num)";
                 sql+=" values(?,?,?,?,?,?,?,?,?)";
 
-                String addr=(obj_kindergarten.getString("소재지도로명주소"));;
-                String school_name=(obj_kindergarten.getString("어린이집명"));;
-                String lat=Double.toString(obj_kindergarten.getDouble("위도"));;
-                String lng=Double.toString(obj_kindergarten.getDouble("경도"));;
-                String schoolbus=(obj_kindergarten.getString("통학차량운영여부"));;
-                String max_stu_num=Integer.toString(obj_kindergarten.getInt("정원수"));;
-                String teacher_num=Integer.toString(obj_kindergarten.getInt("보육교직원수"));;
-                String call_num=(obj_kindergarten.getString("어린이집전화번호"));;
-                String cctv_num=Integer.toString(obj_kindergarten.getInt("CCTV설치수"));;
+                String addr=(obj_kindergarten.getString("소재지도로명주소"));
+                String school_name=(obj_kindergarten.getString("어린이집명"));
+                String lat=Double.toString(obj_kindergarten.getDouble("위도"));
+                String lng=Double.toString(obj_kindergarten.getDouble("경도"));
+                String schoolbus=(obj_kindergarten.getString("통학차량운영여부"));
+                String max_stu_num=Integer.toString(obj_kindergarten.getInt("정원수"));
+                String teacher_num=Integer.toString(obj_kindergarten.getInt("보육교직원수"));
+                String call_num=(obj_kindergarten.getString("어린이집전화번호"));
+                String cctv_num=Integer.toString(obj_kindergarten.getInt("CCTV설치수"));
 
                 db.execSQL(sql,new String[]{addr,school_name,lat,lng,schoolbus,max_stu_num,teacher_num,call_num,cctv_num});
 
